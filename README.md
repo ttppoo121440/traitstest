@@ -1,7 +1,7 @@
 # traitstest
 
 
-## Project Demo
+
 [Demo](https://ttppoo121440.github.io/traitstest/#/)
 
 
