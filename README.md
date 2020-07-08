@@ -2,7 +2,7 @@
 
 
 ## Project Demo
-[Demo](https://ttppoo121440.github.io/traitstest-Demo/index.html#/)
+[Demo](https://ttppoo121440.github.io/traitstest/#/)
 
 
 ## Project setup
