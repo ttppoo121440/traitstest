@@ -1,0 +1,85 @@
+@import "~@/assets/scss/main.scss";
+.title {
+  margin-top: 100px;
+  margin-left: 150px;
+  @include media-up(lg) {
+    margin-left: 30%;
+  }
+  @include media-down(lg) {
+    margin-left: 0;
+    text-align: center;
+  }
+  .label {
+    position: relative;
+  }
+  span {
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    @include media-down(lg) {
+      position: initial;
+    }
+  }
+}
+.play {
+  margin-top: 100px;
+  @include media-down(lg) {
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+  }
+  @include media-down(md) {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .content {
+    @include media-down(lg) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    @include media-down(md) {
+      width: 90%;
+      margin: auto;
+    }
+    p {
+      left: 25%;
+      width: 60%;
+      position: relative;
+      @include media-down(lg) {
+        width: 100%;
+        position: inherit;
+      }
+      @include media-down(md) {
+        width: 90%;
+      }
+    }
+  }
+  .col-lg-12 {
+    @include media-down(lg) {
+      text-align: center;
+    }
+  }
+}
+
+.theme-btn {
+  display: inline-block;
+  background: #4f61ff;
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  font-size: 32px;
+  margin: 50px 0;
+  position: relative;
+  left: -5%;
+
+  @include media-down(lg) {
+    position: inherit;
+  }
+  &::after {
+    content: "\2192";
+  }
+}

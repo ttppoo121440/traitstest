@@ -1,0 +1,58 @@
+.next-test {
+  font-size: 32px;
+  margin-top: 100px;
+  text-align: right;
+  a {
+    color: #000000;
+    &::after {
+      content: "\2192";
+      color: blue;
+    }
+  }
+  .test-next-btn {
+    padding: 100px 0;
+  }
+  .renew-btn {
+    border: 1px solid #000;
+    padding: 15px 40px;
+    &::after {
+      color: #000;
+    }
+  }
+}
+.commentary {
+  &-level {
+    font-size: 46px;
+  }
+  &-text {
+    width: 50%;
+    font-size: 24px;
+  }
+}
+.bg-pic {
+  background: url("~@/assets/nature-3173180_1920.jpg") no-repeat;
+  font-weight: bold;
+}
+.introduction {
+  margin-top: 150px;
+  &-title {
+    width: 200px;
+    margin-right: 50px;
+  }
+  &-content {
+    width: 450px;
+  }
+}
+
+.menu {
+  a {
+    color: #000000de;
+    padding: 10px 0;
+    &:hover {
+      border-bottom: 3px solid blue;
+    }
+  }
+  .active {
+    border-bottom: 3px solid blue;
+  }
+}

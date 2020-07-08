@@ -1,0 +1,124 @@
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.questionnaire-next{
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.next-btn {
+  width: 100%;
+  border: none;
+  display: block;
+  text-align: right;
+  background: #4f61ff;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  outline: none;
+  &::after {
+    content: "\2192";
+  }
+  &::focus,&::focus-within,&::active,&::visited{
+    border: none;
+    outline: none;
+  }
+}
+button{
+  &::focus,&::focus-within,&::active,&::visited{
+    border: none;
+    outline: none;
+  }
+}
+.schedule {
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 50px;
+  font-size: 36px;
+}
+.multiple-choice {
+  margin-top: 100px;
+  input {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    top: 20px;
+  }
+}
+.label-block {
+  position: relative;
+  height: 500px;
+  div {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+  }
+}
+.questionnaire {
+  background: #f4f4f4;
+  height: 100vh;
+  overflow: hidden;
+  &-title {
+    margin-top: 30%;
+    text-align: center;
+  }
+  &-label {
+    h2 {
+      font-size: 46px;
+      position: relative;
+      display: inline;
+    }
+    span {
+      position: absolute;
+      top: -50px;
+      left: 0;
+    }
+  }
+}
+.prev-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #4f61ff;
+  color: white;
+  font-size: 50px;
+  &::after {
+    content: "\2190";
+  }
+}
