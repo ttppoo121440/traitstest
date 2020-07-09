@@ -4,7 +4,7 @@
       <div
         class="commentary-level py-5"
       >
-        {{ translation }}
+        評估:{{ translation }}
       </div>
       <div class="commentary-text">
         <p>

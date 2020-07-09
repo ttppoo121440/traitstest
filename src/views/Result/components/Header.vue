@@ -13,7 +13,7 @@
             <p>Big Five personality traits test</p>
           </a>
         </div>
-        <div class="menu d-none d-lg-block">
+        <div class="menu d-none d-md-block">
           <ul class="d-flex">
             <li
               v-for="(item, index) of descriptionNav"

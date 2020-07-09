@@ -1,12 +1,12 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xl-6 p-0">
+      <div class="col-lg-6 p-0">
         <ProblemTitle
           :count="count"
         />
       </div>
-      <div class="col-xl-6 p-0">
+      <div class="col-lg-6 p-0">
         <Options
           :count="count"
           :total.sync="total"
@@ -64,7 +64,7 @@ export default {
       }
     },
     next() {
-      this.isSelect();
+      // this.isSelect();
       this.totalNumber += this.total;
       this.total = 0;
 

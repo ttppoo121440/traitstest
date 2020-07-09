@@ -72,16 +72,14 @@ button{
     height: 50px;
     width: 50px;
     top: 20px;
-    @include media-down(sm) {
-      height: auto;
-      width: auto;
-      top: 30px;
-    }
   }
 }
 .questionnaire {
   background: #f4f4f4;
   height: 100vh;
+  @include media-down(md) {
+    height: 45vh;
+  }
   &-title {
     text-align: center;
   }
@@ -90,11 +88,17 @@ button{
       font-size: 46px;
       position: relative;
       display: inline;
+      @include media-down(md) {
+        font-size: 32px;
+      }
     }
     span {
       position: absolute;
       top: -50px;
       left: 0;
+      @include media-down(md) {
+        top: -30px;
+      }
     }
   }
 }
