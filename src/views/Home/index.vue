@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid p-0">
+  <section class="container-fluid p-0">
     <Banner />
     <div class="row m-0">
       <div class="col-xl-5 col-lg-12">
@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

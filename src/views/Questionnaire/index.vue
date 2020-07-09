@@ -58,11 +58,13 @@ export default {
     close(data) {
       this.isWrite = data;
     },
-    next() {
+    isSelect() {
       if (this.total === 0) {
         this.isWrite = true;
       }
-
+    },
+    next() {
+      this.isSelect();
       this.totalNumber += this.total;
       this.total = 0;
 

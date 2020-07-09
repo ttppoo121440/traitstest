@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <section class="container">
     <div class="commentary">
       <div
-        class="commentary-level my-5"
+        class="commentary-level py-5"
       >
         {{ translation }}
       </div>
@@ -42,7 +42,7 @@
         </router-link>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

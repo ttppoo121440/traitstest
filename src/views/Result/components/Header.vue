@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid p-0 bg-pic">
+  <header class="container-fluid p-0 bg-pic">
     <div class="container">
-      <header class="header d-flex justify-content-between">
+      <div class="d-flex justify-content-between ">
         <div class="logo p-3">
           <a
             href="#"
@@ -13,7 +13,7 @@
             <p>Big Five personality traits test</p>
           </a>
         </div>
-        <div class="menu">
+        <div class="menu d-none d-lg-block">
           <ul class="d-flex">
             <li
               v-for="(item, index) of descriptionNav"
@@ -30,20 +30,26 @@
             </li>
           </ul>
         </div>
-      </header>
+      </div>
       <div class="introduction d-flex justify-content-between">
-        <div class="introduction-title">
-          <h2>{{ descriptionData.name }}</h2>
-          <span>{{ traitsData }}</span>
-        </div>
-        <div class="introduction-content">
-          <p>
-            {{ descriptionDesc }}
-          </p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="introduction-title">
+              <h2>{{ descriptionData.name }}</h2>
+              <span>{{ traitsData }}</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="introduction-content">
+              <p>
+                {{ descriptionDesc }}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>

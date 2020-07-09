@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <transition name="page">
-      <router-view />
+    <transition
+      name="page"
+      appear
+    >
+      <router-view :key="$route.fullPath" />
     </transition>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section class="d-flex flex-column h-100 justify-content-between">
     <div
       v-if="count !== 10"
       class="schedule"
@@ -11,6 +11,7 @@
         <li
           v-for="item of optionsData"
           :key="item.problem"
+          class="d-flex"
         >
           <input
             :id="item.description"
@@ -21,7 +22,7 @@
           >
           <label
             :for="item.description"
-            class="p-4"
+            class="p-4 w-100"
           >
             {{ item.description }}
           </label>
@@ -38,7 +39,7 @@
         下一提
       </a>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

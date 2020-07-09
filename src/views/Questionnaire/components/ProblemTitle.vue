@@ -1,26 +1,24 @@
 <template>
-  <div class="questionnaire">
+  <section class="questionnaire d-flex flex-column justify-content-between">
     <div class="prev">
       <router-link
         class="prev-btn"
         to="/"
       />
-      <div class="questionnaire-title">
-        <div class="questionnaire-label">
-          <h2 v-if="count !== 10">
-            {{ problemTitle }}
-            <span>Q</span>
-          </h2>
-        </div>
-      </div>
-      <div class="label-block">
-        <div>
-          <p>五大性格特質心理測驗</p>
-          <p>Big Five personality traits test</p>
-        </div>
+    </div>
+    <div class="questionnaire-title">
+      <div class="questionnaire-label">
+        <h2 v-if="count !== 10">
+          {{ problemTitle }}
+          <span>Q</span>
+        </h2>
       </div>
     </div>
-  </div>
+    <div class="label-block pl-5">
+      <p>五大性格特質心理測驗</p>
+      <p>Big Five personality traits test</p>
+    </div>
+  </section>
 </template>
 
 <script>
