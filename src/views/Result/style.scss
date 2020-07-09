@@ -1,5 +1,5 @@
 @import "~@/assets/scss/main.scss";
-.logo{
+.logo {
   @include media-down(sm) {
     width: 100%;
     text-align: center;
@@ -63,11 +63,10 @@
     margin-right: 50px;
     @include media-down(sm) {
       width: 100%;
-      margin-right:0px;
+      margin-right: 0px;
       margin-bottom: 50px;
     }
   }
- 
 }
 
 .menu {
@@ -75,7 +74,7 @@
   @include media-down(md) {
     font-size: 13px;
   }
-  ul{
+  ul {
     padding: 0;
   }
   a {

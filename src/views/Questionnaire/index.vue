@@ -64,7 +64,7 @@ export default {
       }
     },
     next() {
-      // this.isSelect();
+      this.isSelect();
       this.totalNumber += this.total;
       this.total = 0;
 
